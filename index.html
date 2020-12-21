@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Firebase Chat App</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+</head>
+<body>
+    <div class="info" id="info">
+      Hi, I'm Sakindu 😅<br>
+      and this is my second code in Sololearn..<br>
+      <b>The following are some instructions on how to use the UI:</b><br>
+      <br>
+      Firstly, You SHOULD have the link to your Sololearn Profile. It should be something like this:<mark>https://sololearn.com/Profile/20354365</mark>(NOTE:This is the link to my profile).<br><br>
+      Then, grab/take/copy only the id which is the number in the link to your profile.<mark>20354365</mark><br><br>
+      After that, <b>paste that ID in the SECOND input of the LOGIN section...And Make sure that you have typed in the correct ID so your <b>SL profile pic</b> will load correctly!!!(IF IT IS NOT THE CORRECT ID, IT WILL SHOW A DEFAULT IMAGE)</b><br><br>
+      <b>That's it!!!</b> So your messages will be saved in that id and you can LOGIN again with that id...<br><br><br>
+      NOTE: Don't type in Abusive/Bad stuff as messages!!! If typed, it will be DELETED...<br>
+      <button class="login-submit" onclick="getIn()">GET IN</button>
+    </div>
+    <div class="chat" id="chat">
+      <div class="name-bar">
+        <img src="https://pbs.twimg.com/profile_images/378800000242038210/3c561ae8a8bbf4d8f7c3428e49a92e51_400x400.png" alt="icon" class="group-img">
+        <span class="grp-name">Sololearners</span>
+      </div>
+      <div class="msgs" id="msgs">
+          
+      </div>
+
+    
+    <div class="msg-input">
+        <form name="msg-form" class="msg-form" onsubmit="return sendMessage()">
+            <div class="clip" id="addemoji"><i class="far fa-smile fa-2x send-msg"></i></div>
+            <input type="text" required id="input" class="inp" placeholder="Type a message..">
+            <button class="div-send" type="submit" id="send"><i class="fab fa-telegram-plane fa-2x send-msg"></i></button>
+        </form>
+    </div>
+    </div>
+    <div class="login">
+      <div class="login-container">
+      <div class="pic-container">
+        <img src="https://thumbs.dreamstime.com/z/user-icon-person-profile-sign-vector-avatar-user-icon-person-profile-sign-vector-avatar-illustration-124240309.jpg" alt="profile-img" class="login-img">
+      </div>
+      <form class="login-form" onsubmit="return login()">
+        <input type="text" id="login-name" class="login-name" placeholder="Name" required><br>
+        <input type="text" id="login-id" class="login-id" placeholder="Sololearn Profile Id" required><br>
+        <button type="submit" class="login-submit">Login</button>
+      </form><br><br>
+      <span class="copyright">&copy; 2020 {$@k!ndu-d}</span>
+      </div>
+    </div>
+    
+<script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-app.js"></script>
+ 
+
+<script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-database.js"></script>
+ 
+
+<script
+    src="https://kit.fontawesome.com/836a943e18.js"
+    crossorigin="anonymous"></script>
+</body>
+</html>
